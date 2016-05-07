@@ -3,7 +3,7 @@ node('nodejs') {
 stage 'Build and publish npm'
 env.PATH = "/usr/bin:${env.PATH}"
 sh 'env'
-withEnv(["PATH"="/usr/bin"]) {
+withEnv(["PATH=/usr/bin"]) {
 
 sh 'npm install ci-npm-publish'
 sh 'npm test'
