@@ -1,4 +1,4 @@
-node 'nodejs' {
+node('nodejs') {
 
 stage 'Build and publish cf-left-pad'
 sh 'npm install ci-npm-publish'
