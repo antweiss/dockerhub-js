@@ -1,9 +1,11 @@
 node('nodejs') {
+stage 'SCM'
+git 'https://github.com/antweiss/dockerhub-js.git'
 
 stage 'Build and publish npm'
 env.PATH = "/usr/bin:${env.PATH}"
 sh 'env'
-sh 'which npm'
+//sh 'which npm'
 sh 'npm install ci-npm-publish'
 sh 'npm test'
 sh 'npm version patch'
