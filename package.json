@@ -1,0 +1,33 @@
+{
+  "name": "dockerhub-js",
+  "version": "0.0.1",
+  "description": "Dockerhub interface for js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "request" : "*",
+    "https" : "*",
+    "step" : "*"
+  },
+  "devDependencies": {
+    "tape": "*"
+  },
+  "keywords": [
+    "dockerhub",
+    "docker"
+],
+  "repository": {
+    "url": "git@github.com:otomato-gh/dockerhub-js.git",
+    "type": "git"
+  },
+  "author": "antweiss",
+  "maintainers": [
+    {
+      "name": "Anton Weiss",
+      "email": "ant.weiss@gmail.com"
+    }
+  ],
+  "license": "WTFPL"
+}
