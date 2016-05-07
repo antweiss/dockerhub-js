@@ -1,6 +1,7 @@
 node('nodejs') {
 
-stage 'Build and publish cf-left-pad'
+stage 'Build and publish npm'
+sh 'env'
 sh 'npm install ci-npm-publish'
 sh 'npm test'
 sh 'npm version patch'
